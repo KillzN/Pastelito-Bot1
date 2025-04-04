@@ -61,7 +61,7 @@ async function start(file) {
     gradient: ['red', 'magenta'],
   });
 
-  say(`@𝖎𝖓𝖊𝖋𝖋𝖆𝖇𝖑𝖊.𝖒𝖛𝖗𝖈𝖔`, {
+  say(`Sigueme en instagram como: @ineffable.mvrco`, {
     font: 'console',
     align: 'center',
     gradient: ['red', 'magenta'],

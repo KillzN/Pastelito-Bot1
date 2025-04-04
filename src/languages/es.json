@@ -2687,16 +2687,16 @@
         },
         "info_groupsofc": {
             "texto1": [
-                "*𝙷𝙾𝙻𝙰 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 👋🏻, 𝚃𝙴 𝙸𝙽𝚅𝙸𝚃𝙾 𝙰 𝚄𝙽𝙸𝚁𝚃𝙴 𝙰 𝙻𝙾𝚂 𝙶𝚁𝚄𝙿𝙾𝚂 𝙾𝙵𝙸𝙲𝙸𝙰𝙻𝙴𝚂 𝙳𝙴 𝚃𝙷𝙴 𝚂𝙷𝙰𝙳𝙾𝚆 𝙱𝚁𝙾𝙺𝙴𝚁𝚂 - 𝚃𝙴𝙰𝙼 𝙿𝙰𝚁𝙰 𝙲𝙾𝙽𝚅𝙸𝚅𝙸𝚁 𝙲𝙾𝙽 𝙻𝙰 𝙲𝙾𝙼𝚄𝙽𝙸𝙳𝙰𝙳 :D*",
+                "*𝙷𝙾𝙻𝙰 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 👋🏻, 𝚃𝙴 𝙸𝙽𝚅𝙸𝚃𝙾 𝙰 𝙼𝙸 𝙶𝚁𝚄𝙿𝙾 𝙳𝙴 𝚅𝙴𝙽𝚃𝙰𝚂 - 𝙺𝙸𝙻𝙻𝚉𝙽 𝚂𝚃𝙾𝚁𝙴*",
                 "*➤ 𝙶𝚛𝚞𝚙𝚘𝚜 𝚘𝚏𝚒𝚌𝚒𝚊𝚕𝚎𝚜 𝚍𝚎𝚕 𝙱𝚘𝚝:*",
-                "*1.-* https://chat.whatsapp.com/LjJbmdO0qSDEKgB60qivZj",
-                "*2.-* https://chat.whatsapp.com/DbXBmsydWBE1ZN3EoY0hRs",
-                "*3.-* https://chat.whatsapp.com/BW0P22xx7EGBTdH5IM851F",
-                "*4.-* https://chat.whatsapp.com/CjexkGVr37J6GuSdDVAHzC",
-                "*5.-* https://chat.whatsapp.com/DLrFJUPxEQ2IrOm7sJWJ0k"
+                "*1.-* https://chat.whatsapp.com/FQhAChRgh2P84YJsHQuWlw",
+                "*2.-* https://chat.whatsapp.com/IAHpXVSTVbC7xk17kAqRzo",
+                "*3.-* https://chat.whatsapp.com/IAHpXVSTVbC7xk17kAqRzo",
+                "*4.-* https://chat.whatsapp.com/IAHpXVSTVbC7xk17kAqRzo",
+                "*5.-* https://chat.whatsapp.com/IAHpXVSTVbC7xk17kAqRzo"
             ],
-            "texto2": "「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」",
-            "texto3": "ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩"
+            "texto2": "「  @𝖎𝖓𝖊𝖋𝖋𝖆𝖇𝖑𝖊.𝖒𝖛𝖗𝖈𝖔 」",
+            "texto3": "🇹​​​​​🇺​​​​​ 🇰​​​​​🇨​​​​​🇭​​​​​🇪​​​​​🇷​​​​​🇴​​​​​ 🇰​​​​​🇮​​​​​🇱​​​​​🇱​​​​​🇿🇳​​​​​⁩"
         },
         "info_host": {
             "texto1": [
@@ -2722,7 +2722,7 @@
         },
         "info_instalarbot": {
             "texto1": "*—◉ 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 𝙱𝙾𝚇𝙼𝙸𝙽𝙴 𝙷𝙾𝚂𝚃*\n> Tutorial: https://youtu.be/eC9TfKICpcY\n> Pagina Oficial: https://boxmineworld.com\n> Dashboard: https://dash.boxmineworld.com/home\n> Panel: https://panel.boxmineworld.com\n> Soporte: https://discord.gg/84qsr4v \n\n------------------------------------\n—◉ 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻-𝚃𝙴𝚁𝙼𝚄𝚇\n> https://youtu.be/yRS4m36Zwkw\n\n------------------------------------\n\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚃𝙴𝚁𝙼𝚄𝚇*\n> Comandos:\n- cd && termux-setup-storage\n- apt-get update -y && apt-get upgrade -y\n- pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn \n- git clone https://github.com/Mvrco/TheMystic-Bot-MD.git && cd TheMystic-Bot-MD\n- yarn install\n- npm install\n- npm update\n- npm start\n\n------------------------------------\n\n—◉ ✔️ ACTIVAR EN CASO DE DETENERSE EN TERMUX ✔️\nESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:\n> cd TheMystic-Bot-MD\n> npm start\n\n------------------------------------\n\n—◉ 👽 OBTENER OTRO CODIGO QR EN TERMUX 👽\nESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:\n> cd TheMystic-Bot-MD\n> rm -rf MysticSession\n> npm start",
-            "texto2": "ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩"
+            "texto2": "🇹​​​​​🇺​​​​​ 🇰​​​​​🇨​​​​​🇭​​​​​🇪​​​​​🇷​​​​​🇴​​​​​ 🇰​​​​​🇮​​​​​🇱​​​​​🇱​​​​​🇿🇳​​​​​⁩"
         },
         "info_listprem": {
             "texto1": [
