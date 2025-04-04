@@ -1,24 +1,24 @@
 import fs from 'fs';
 import { prepareWAMessageMedia, generateWAMessageFromContent, getDevice } from "baileys";
 
-const handler = async (m, {conn, args}) => {
-  const datas = global
-  const idioma = datas.db.data.users[m.sender].language || global.defaultLenguaje
-  const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
-  const tradutor = _translate.plugins.gc_link
+const handler = async (m, { conn, args }) => {
+    const datas = global
+    const idioma = datas.db.data.users[m.sender].language || global.defaultLenguaje
+    const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
+    const tradutor = _translate.plugins.gc_link
 
-  let ppgc;
-  try {
-      ppgc = await conn.profilePictureUrl(m.chat, 'image')
-  } catch {
-      ppgc = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png'
-  }  
-  const ppgcbuff = await conn.getFile(ppgc)    
-  const device = await getDevice(m.key.id);
-    
+    let ppgc;
+    try {
+        ppgc = await conn.profilePictureUrl(m.chat, 'image')
+    } catch {
+        ppgc = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png'
+    }
+    const ppgcbuff = await conn.getFile(ppgc)
+    const device = await getDevice(m.key.id);
+
     if (device !== 'desktop' || device !== 'web') {
         const linkcode = await conn.groupInviteCode(m.chat)
-        var messa = await prepareWAMessageMedia({ image: ppgcbuff.data}, { upload: conn.waUploadToServer })
+        var messa = await prepareWAMessageMedia({ image: ppgcbuff.data }, { upload: conn.waUploadToServer })
         let msg = generateWAMessageFromContent(m.chat, {
             viewOnceMessage: {
                 message: {
@@ -39,26 +39,29 @@ const handler = async (m, {conn, args}) => {
                                         copy_code: `https://chat.whatsapp.com/${linkcode}`,
                                         id: `https://chat.whatsapp.com/${linkcode}`
                                     })
-                                },                   
+                                },
                             ],
                             messageParamsJson: "",
                         },
                     },
                 },
             }
-        }, { userJid: conn.user.jid, quoted: m})
-      conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id});
+        }, { userJid: conn.user.jid, quoted: m })
+        conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id });
     } else {
         conn.reply(m.chat, 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group), m, {
-           contextInfo: {externalAdReply: {mediaUrl: null, mediaType: 1, description: null,
-           title: tradutor.texto1[0],
-           body: '𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝',
-           previewType: 0, thumbnail: fs.readFileSync('./src/assets/images/menu/languages/es/menu.png'),
-           sourceUrl: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`}
-           }
+            contextInfo: {
+                externalAdReply: {
+                    mediaUrl: null, mediaType: 1, description: null,
+                    title: tradutor.texto1[0],
+                    body: '𝙺𝙸𝙻𝙻 𝙱𝙾𝚃',
+                    previewType: 0, thumbnail: fs.readFileSync('./src/assets/images/menu/languages/es/menu.png'),
+                    sourceUrl: `instagram.com/ineffable.mvrco`
+                }
+            }
         }
-      );  
-   }
+        );
+    }
 };
 handler.help = ['linkgroup'];
 handler.tags = ['group'];
