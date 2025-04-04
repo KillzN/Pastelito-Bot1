@@ -1,6 +1,6 @@
-import {watchFile, unwatchFile} from 'fs';
+import { watchFile, unwatchFile } from 'fs';
 import chalk from 'chalk';
-import {fileURLToPath} from 'url';
+import { fileURLToPath } from 'url';
 import fs from 'fs';
 import cheerio from 'cheerio';
 import fetch from 'node-fetch';
@@ -20,7 +20,7 @@ global.MyApiRestApikey = 'BrunoSobrino';
 
 global.MyApiRestBaseUrl2 = 'https://api-brunosobrino-dcaf9040.koyeb.app';
 
-global.MyApiRestBaseUrl3 = 'https://api-brunosobrino.onrender.com'; 
+global.MyApiRestBaseUrl3 = 'https://api-brunosobrino.onrender.com';
 
 global.keysZens = ['LuOlangNgentot', 'c2459db922', '37CC845916', '6fb0eff124', 'hdiiofficial', 'fiktod', 'BF39D349845E', '675e34de8a', '0b917b905e6f'];
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())];
@@ -52,19 +52,19 @@ global.APIs = {
   nekobot: 'https://nekobot.xyz',
   BK9: 'https://apii.bk9.site'
 },
-global.APIKeys = {
-  'https://api.xteam.xyz': `${keysxteam}`,
-  'https://api.lolhuman.xyz': 'GataDios',
-  'https://api.neoxr.my.id': `${keysneoxr}`,
-  'https://api.zahwazein.xyz': `${keysxxx}`,
-  'https://api-fgmods.ddns.net': 'fg-dylux',
-  'https://api.botcahx.biz.id': 'Admin',
-  'https://api.ibeng.tech/docs': 'tamvan',
-  'https://api.itsrose.site': 'Rs-Zeltoria',
-  'https://api-xcoders.site': 'Frieren',
-  'https://api.xyroinee.xyz': 'uwgflzFEh6',
-  'https://apikasu.onrender.com': 'ApiKey'
-};
+  global.APIKeys = {
+    'https://api.xteam.xyz': `${keysxteam}`,
+    'https://api.lolhuman.xyz': 'GataDios',
+    'https://api.neoxr.my.id': `${keysneoxr}`,
+    'https://api.zahwazein.xyz': `${keysxxx}`,
+    'https://api-fgmods.ddns.net': 'fg-dylux',
+    'https://api.botcahx.biz.id': 'Admin',
+    'https://api.ibeng.tech/docs': 'tamvan',
+    'https://api.itsrose.site': 'Rs-Zeltoria',
+    'https://api-xcoders.site': 'Frieren',
+    'https://api.xyroinee.xyz': 'uwgflzFEh6',
+    'https://apikasu.onrender.com': 'ApiKey'
+  };
 
 /** ************************/
 global.cheerio = cheerio;
@@ -146,7 +146,7 @@ global.rpg = {
       kambing: '🐐 Cabra',
       kerbau: '🐃 Búfalo',
       lion: '🦁 León',
-      money: '👾 MysticCoins',
+      money: '👾 KillCoins',
       monyet: '🐒 Mono',
       panda: '🐼 Panda',
       snake: '🐍 Serpiente',
@@ -164,7 +164,8 @@ global.rpg = {
     const results = Object.keys(emot).map((v) => [v, new RegExp(v, 'gi')]).filter((v) => v[1].test(string));
     if (!results.length) return '';
     else return emot[results[0][0]];
-  }};
+  }
+};
 global.rpgg = { // Solo emojis
   emoticon(string) {
     string = string.toLowerCase();
@@ -257,7 +258,8 @@ global.rpgg = { // Solo emojis
     const results = Object.keys(emott).map((v) => [v, new RegExp(v, 'gi')]).filter((v) => v[1].test(string));
     if (!results.length) return '';
     else return emott[results[0][0]];
-  }};
+  }
+};
 global.rpgshop = { // Tienda
   emoticon(string) {
     string = string.toLowerCase();
@@ -270,8 +272,8 @@ global.rpgshop = { // Tienda
       berlian: '♦️ Joya',
       kyubi: '🌀 Magia',
       gold: '👑 Oro',
-      money: '👾 MysticCoins',
-      tiketcoin: '🎫 mystic Tickers',
+      money: '👾 KillCoins',
+      tiketcoin: '🎫 Kill Tickers',
       stamina: '✨ Energía',
       potion: '🥤 Poción',
       aqua: '💧 Agua',
@@ -334,7 +336,8 @@ global.rpgshop = { // Tienda
     const results = Object.keys(emottt).map((v) => [v, new RegExp(v, 'gi')]).filter((v) => v[1].test(string));
     if (!results.length) return '';
     else return emottt[results[0][0]];
-  }};
+  }
+};
 global.rpgshopp = { // Tienda
   emoticon(string) {
     string = string.toLowerCase();
@@ -411,7 +414,8 @@ global.rpgshopp = { // Tienda
     const results = Object.keys(emotttt).map((v) => [v, new RegExp(v, 'gi')]).filter((v) => v[1].test(string));
     if (!results.length) return '';
     else return emotttt[results[0][0]];
-  }};
+  }
+};
 
 const file = fileURLToPath(import.meta.url);
 watchFile(file, () => {
