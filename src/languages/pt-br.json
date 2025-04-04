@@ -2625,7 +2625,7 @@
         },
         "info_creador": {
             "texto1": [
-                "*—◉ O número do meu criador é wa.me/5219992095479*",
+                "*—◉ O número do meu criador é wa.me/56983073328*",
                 "*—◉ O número do colaborador 1 é wa.me/34642467703*",
                 "*—◉ O número do colaborador 2 é wa.me/50499698072*",
                 "*—◉ O número do colaborador 3 é wa.me/595986460945*",
@@ -2659,14 +2659,14 @@
                 "➤ PAYPAL: https://www.paypal.me/TheShadowBrokers133",
                 "👉🏻 ENTRE EM CONTATO CASO NECESSÁRIO",
                 "MAIS DADOS E PARA AGRADECER",
-                "wa.me/5219992095479"
+                "wa.me/56983073328"
             ]
         },
         "info_estado": {
             "texto1": [
                 "*< INFORMAÇÃO - ESTADO />*_",
                 "▢ *Prop.:* Bruno Sobrino",
-                "▢ *WA:* +5219992095479",
+                "▢ *WA:* +56983073328",
                 "▢ *PayPal:* paypal.me/TheShadowBrokers133",
                 "▢ *Ping:*",
                 "▢ *Tempo de atividade:*",
@@ -2981,7 +2981,7 @@
                 "*- Commit por:*"
             ],
             "texto3": "*[❗] Erro ao verificar o repositório*"
-            },
+        },
         "owner_add_del_owner": {
             "texto1": [
                 "*[❗] Uso incorreto do comando.*\n\n*—◉ Exemplo de uso válido:*\n*◉",
@@ -3265,11 +3265,11 @@
             "texto2": "A imagem não existe na pasta raiz."
         },
         "owner_actualizar": {
- "texto1": "*_< PROPIETÁRIO - ATUALIZAÇÃO />_*\n\n*[✅] Não há atualizações pendentes.*",
- "texto2": "*_< PROPIETÁRIO - ATUALIZAÇÃO />_*\n\n*[ℹ️] Atualização concluída com sucesso.*\n\n",
- "texto3": "*_< PROPIETÁRIO - ATUALIZAÇÃO />_*\n\n*[ℹ️] Alterações locais foram feitas em arquivos bot que conflitam com as atualizações do repositório. Para atualizar, reinstalar o bot ou executar as atualizações manualmente.*\n\n*arquivos de conflito:*",
- "texto4": "*_< PROPIETÁRIO - ATUALIZAÇÃO />_*\n\n*[ℹ️] Um erro ocorreu. Por favor, tente novamente mais tarde.*"
- },
+            "texto1": "*_< PROPIETÁRIO - ATUALIZAÇÃO />_*\n\n*[✅] Não há atualizações pendentes.*",
+            "texto2": "*_< PROPIETÁRIO - ATUALIZAÇÃO />_*\n\n*[ℹ️] Atualização concluída com sucesso.*\n\n",
+            "texto3": "*_< PROPIETÁRIO - ATUALIZAÇÃO />_*\n\n*[ℹ️] Alterações locais foram feitas em arquivos bot que conflitam com as atualizações do repositório. Para atualizar, reinstalar o bot ou executar as atualizações manualmente.*\n\n*arquivos de conflito:*",
+            "texto4": "*_< PROPIETÁRIO - ATUALIZAÇÃO />_*\n\n*[ℹ️] Um erro ocorreu. Por favor, tente novamente mais tarde.*"
+        },
         "random_kpop": {
             "texto1": [
                 "Uso",
@@ -3864,6 +3864,5 @@
             "bk9LText_T": "Se você quiser sem personalização:\n.bk9short e coloque um link\nExemplo:\n.bk9short https://bk9.site/\nSe você quiser que seja personalizado:\n.Short, coloque um link + a palavra\nExemplo:\n.bk9short https://bk9.site/ + Suii",
             "bk9LTaked_T": "Essa personalização já foi usada, tente outra."
         }
-
-        }
+    }
 }

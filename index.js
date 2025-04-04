@@ -5,8 +5,8 @@ import { setupMaster, fork } from 'cluster';
 import cfonts from 'cfonts';
 import readline from 'readline';
 import yargs from 'yargs';
-import chalk from 'chalk'; 
-import fs from 'fs'; 
+import chalk from 'chalk';
+import fs from 'fs';
 import './config.js';
 
 const { PHONENUMBER_MCC } = await import('baileys');
@@ -34,11 +34,11 @@ function verificarCredsJson() {
 
 function formatearNumeroTelefono(numero) {
   let formattedNumber = numero.replace(/[^\d+]/g, '');
-  if (formattedNumber.startsWith('+52') && !formattedNumber.startsWith('+521')) {
-    formattedNumber = formattedNumber.replace('+52', '+521');
-  } else if (formattedNumber.startsWith('52') && !formattedNumber.startsWith('521')) {
-    formattedNumber = `+521${formattedNumber.slice(2)}`;
-  } else if (formattedNumber.startsWith('52') && formattedNumber.length >= 12) {
+  if (formattedNumber.startsWith('+56') && !formattedNumber.startsWith('+56')) {
+    formattedNumber = formattedNumber.replace('+56', '+56');
+  } else if (formattedNumber.startsWith('56') && !formattedNumber.startsWith('56')) {
+    formattedNumber = `+56${formattedNumber.slice(2)}`;
+  } else if (formattedNumber.startsWith('56') && formattedNumber.length >= 12) {
     formattedNumber = `+${formattedNumber}`;
   } else if (!formattedNumber.startsWith('+')) {
     formattedNumber = `+${formattedNumber}`;
@@ -55,13 +55,13 @@ async function start(file) {
   if (isRunning) return;
   isRunning = true;
 
-  say('The Mystic\nBot', {
+  say('KILL \n BOT', {
     font: 'chrome',
     align: 'center',
     gradient: ['red', 'magenta'],
   });
 
-  say(`Bot creado por Bruno Sobrino`, {
+  say(`@𝖎𝖓𝖊𝖋𝖋𝖆𝖇𝖑𝖊.𝖒𝖛𝖗𝖈𝖔`, {
     font: 'console',
     align: 'center',
     gradient: ['red', 'magenta'],
@@ -80,10 +80,10 @@ async function start(file) {
 
   let numeroTelefono = '';
   if (opcion === '2') {
-    const phoneNumber = await question(chalk.yellowBright.bold('\n—◉ㅤEscriba su número de WhatsApp:\n') + chalk.white.bold('◉ㅤEjemplo: +5219992095479\n—> '));
+    const phoneNumber = await question(chalk.yellowBright.bold('\n—◉ㅤEscriba su número de WhatsApp:\n') + chalk.white.bold('◉ㅤEjemplo: +56983073328\n—> '));
     numeroTelefono = formatearNumeroTelefono(phoneNumber);
     if (!esNumeroValido(numeroTelefono)) {
-      console.log(chalk.bgRed(chalk.white.bold('[ ERROR ] Número inválido. Asegúrese de haber escrito su numero en formato internacional y haber comenzado con el código de país.\n—◉ㅤEjemplo:\n◉ +5219992095479\n')));
+      console.log(chalk.bgRed(chalk.white.bold('[ ERROR ] Número inválido. Asegúrese de haber escrito su numero en formato internacional y haber comenzado con el código de país.\n—◉ㅤEjemplo:\n◉ +56983073328\n')));
       process.exit(0);
     }
     process.argv.push(numeroTelefono);

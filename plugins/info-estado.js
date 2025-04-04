@@ -28,12 +28,12 @@ const handler = async (m, { conn, usedPrefix }) => {
   const old = performance.now();
   const neww = performance.now();
   const rtime = (neww - old).toFixed(7);
-  const wm = 'The Mystic Bot';
+  const wm = 'KILL - BOT';
   const info = ` ${tradutor.texto1[0]}
 
-  ${tradutor.texto1[1]} Bruno Sobrino
-  ${tradutor.texto1[2]} +5219992095479
-  ${tradutor.texto1[3]} paypal.me/BrunoSob
+  ${tradutor.texto1[1]} Mvrco
+  ${tradutor.texto1[2]} +56983073328
+  ${tradutor.texto1[3]} paypal.me/ineffablexmvrco
 
   ${tradutor.texto1[4]} ${rtime}
   ${tradutor.texto1[5]} ${uptime}
@@ -63,22 +63,22 @@ const handler = async (m, { conn, usedPrefix }) => {
   ];
   const document = doc[Math.floor(Math.random() * doc.length)];
   const Message = {
-    document: { url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD` },
+    document: { url: `https://www.instagram.com/ineffable.mvrco` },
     mimetype: `application/${document}`,
-    fileName: `Documento`,
+    fileName: `KɪʟʟᴢN`,
     fileLength: 99999999999999,
     pageCount: 200,
     contextInfo: {
       forwardingScore: 200,
       isForwarded: true,
       externalAdReply: {
-        mediaUrl: "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+        mediaUrl: "https://www.instagram.com/ineffable.mvrco",
         mediaType: 2,
         previewType: "pdf",
-        title: "The Mystic - Bot",
+        title: "KILL - BOT",
         body: tradutor.texto2,
         thumbnail: imagen1,
-        sourceUrl: "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+        sourceUrl: "https://www.instagram.com/ineffable.mvrco",
       },
     },
     caption: info,

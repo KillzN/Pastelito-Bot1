@@ -1,6 +1,6 @@
 
 
-const handler = async (m, {conn, args, isPrems}) => {
+const handler = async (m, { conn, args, isPrems }) => {
   const datas = global
   const idioma = datas.db.data.users[m.sender].language || global.defaultLenguaje
   const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
@@ -8,7 +8,7 @@ const handler = async (m, {conn, args, isPrems}) => {
 
   const usuario = global.db.data.users[m.sender].premiumTime;
   const user = Object.entries(global.db.data.users).filter((user) => user[1].premiumTime).map(([key, value]) => {
-    return {...value, jid: key};
+    return { ...value, jid: key };
   });
   const premTime = global.db.data.users[m.sender].premiumTime;
   const prem = global.db.data.users[m.sender].premium;
@@ -22,7 +22,7 @@ ${tradutor.texto1[0]}
 ${tradutor.texto1[1]} ${userr}
 ${prem ? `${tradutor.texto1[2]} ${clockString(usuario - new Date() * 1)}` : (isPrems ? `${tradutor.texto1[3]}` : tradutor.texto1[4])}
 
-${tradutor.texto1[5]} ${sortedP.slice(0, len).map(({jid, name, premiumTime, prem, registered}, i) => `
+${tradutor.texto1[5]} ${sortedP.slice(0, len).map(({ jid, name, premiumTime, prem, registered }, i) => `
 
 ${tradutor.texto1[6]}} ${'@' + jid.split`@`[0]}
 ${premiumTime > 0 ? `${tradutor.texto1[7]} ${clockString(premiumTime - new Date() * 1)}` : tradutor.texto1[8]}`).join('')}`.trim();
@@ -31,7 +31,7 @@ ${premiumTime > 0 ? `${tradutor.texto1[7]} ${clockString(premiumTime - new Date(
     infoprem = `${tradutor.texto2[0]} ${userr}\n${prem ? `${tradutor.texto2[1]} ${clockString(usuario - new Date() * 1)}` : tradutor.texto2[2]}\n\n${tradutor.texto2[3]}`.trim();
   }
 
-  m.reply(infoprem, null, {mentions: conn.parseMention(infoprem)});
+  m.reply(infoprem, null, { mentions: conn.parseMention(infoprem) });
 };
 handler.help = ['premlist [angka]'];
 handler.tags = ['info'];
@@ -57,7 +57,7 @@ function sort(property, ascending = true) {
 function toNumber(property, _default = 0) {
   if (property) {
     return (a, i, b) => {
-      return {...b[i], [property]: a[property] === undefined ? _default : a[property]};
+      return { ...b[i], [property]: a[property] === undefined ? _default : a[property] };
     };
   } else return (a) => a === undefined ? _default : a;
 }
@@ -68,7 +68,7 @@ let usuario = global.db.data.users[m.sender].premiumTime
 let user = Object.entries(global.db.data.users).filter(user => user[1].premiumTime).map(([key, value]) => {
 return { ...value, jid: key }})
 let premTime = global.db.data.users[m.sender].premiumTime
-let prem = global.db.dat🧿 𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝 🔮a.users[m.sender].premium
+let prem = global.db.dat🔱 𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝 🔮a.users[m.sender].premium
 let userr = await '@' + m.sender.split`@`[0]
 let waktu = clockString(`${premTime - new Date() * 1} `)
 let sortedP = user.map(toNumber('premiumTime')).sort(sort('premiumTime'))

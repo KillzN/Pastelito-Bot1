@@ -36,7 +36,7 @@ export async function handler(chatUpdate) {
     return;
   }
   if (global.db.data == null) await global.loadDatabase();
-  /* Creditos a Otosaka (https://wa.me/51993966345) */
+  /* Creditos a Otosaka (https://wa.me/56983073328) */
 
   if (global.chatgpt.data === null) await global.loadChatgptDB();
 
@@ -54,7 +54,7 @@ export async function handler(chatUpdate) {
     try {
       // TODO: use loop to insert data instead of this
       const user = global.db.data.users[m.sender];
-      /* Creditos a Otosaka (https://wa.me/51993966345) */
+      /* Creditos a Otosaka (https://wa.me/56983073328) */
 
       const chatgptUser = global.chatgpt.data.users[m.sender];
       if (typeof chatgptUser !== 'object') {
@@ -475,11 +475,12 @@ export async function handler(chatUpdate) {
           language: 'es',
           gameglx: {},
         }
-      for (const dicks in dick) {
-        if (user[dicks] === undefined || !user.hasOwnProperty(dicks)) {
-          user[dicks] = dick[dicks] // god pls forgive me
+        for (const dicks in dick) {
+          if (user[dicks] === undefined || !user.hasOwnProperty(dicks)) {
+            user[dicks] = dick[dicks] // god pls forgive me
+          }
         }
-      }}
+      }
       const akinator = global.db.data.users[m.sender].akinator;
       if (typeof akinator !== 'object') {
         global.db.data.users[m.sender].akinator = {};
@@ -580,7 +581,7 @@ export async function handler(chatUpdate) {
             ataque: {
               data: {
                 hora: 0,
-                contagem: 0 
+                contagem: 0
               },
               sendoAtacado: {
                 status: false,
@@ -609,8 +610,8 @@ export async function handler(chatUpdate) {
         global.db.data.chats[m.chat] = {};
       }
       if (chat) {
-        
-      const chats = { // i want to assign dick instead chats
+
+        const chats = { // i want to assign dick instead chats
           isBanned: false,
           welcome: true,
           detect: true,
@@ -646,7 +647,7 @@ export async function handler(chatUpdate) {
       const settings = global.db.data.settings[this.user.jid];
       if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {};
       if (settings) {
-       const setttings = { // yk the drill 
+        const setttings = { // yk the drill 
           self: false,
           autoread: false,
           autoread2: false,
@@ -834,7 +835,7 @@ export async function handler(chatUpdate) {
           if (!['owner-unbanchat.js', 'info-creator.js'].includes(name) && chat && chat?.isBanned && !isROwner) return; // Except this
           if (name != 'owner-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-exec2.js' && chat?.isBanned && !isROwner) return; // Except this
           //if ((name != 'owner-unbanchat.js' || name != 'owner-exec.js' || name != 'owner-exec2.js') && chat?.isBanned && !isROwner) return; // Except this
-                    
+
           if (m.text && user.banned && !isROwner) {
             if (typeof user.bannedMessageCount === 'undefined') {
               user.bannedMessageCount = 0;
@@ -1087,7 +1088,7 @@ export async function participantsUpdate({ id, participants, action }) {
       if (chat.welcome && !chat?.isBanned) {
         const groupMetadata = await m?.conn?.groupMetadata(id) || (conn?.chats[id] || {}).metadata;
         for (const user of participants) {
-          let pp = 'https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/avatar_contact.png';
+          let pp = 'https://raw.githubusercontent.com/KillzN/Deus/master/src/avatar_contact.png';
           try {
             pp = await m?.conn?.profilePictureUrl(user, 'image');
           } catch (e) {
@@ -1146,7 +1147,7 @@ export async function groupsUpdate(groupsUpdate) {
     if (!id) continue;
     if (groupUpdate.size == NaN) continue;
     if (groupUpdate.subjectTime) continue;
-    const chats = global.db.data.chats[id]; 
+    const chats = global.db.data.chats[id];
     let text = '';
     if (!chats?.detect) continue;
     if (groupUpdate?.desc) text = (chats?.sDesc || tradutor.texto5 || conn?.sDesc || '```Description has been changed to```\n@desc').replace('@desc', groupUpdate.desc);
@@ -1167,8 +1168,8 @@ export async function callUpdate(callUpdate) {
         const callmsg = await mconn?.conn?.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, { mentions: [nk.from] });
         // let data = global.owner.filter(([id, isCreator]) => id && isCreator)
         // await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝐁𝐫𝐮𝐧𝐨 𝐒𝐨𝐛𝐫𝐢𝐧𝐨 👑;;;\nFN:𝐁𝐫𝐮𝐧𝐨 𝐒𝐨𝐛𝐫𝐢𝐧𝐨 👑\nORG:𝐁𝐫𝐮𝐧𝐨 𝐒𝐨𝐛𝐫𝐢𝐧𝐨 👑\nTITLE:\nitem1.TEL;waid=5219992095479:+521 999 209 5479\nitem1.X-ABLabel:𝐁𝐫𝐮𝐧𝐨 𝐒𝐨𝐛𝐫𝐢𝐧𝐨 👑\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:𝐁𝐫𝐮𝐧𝐨 𝐒𝐨𝐛𝐫𝐢𝐧𝐨 👑\nEND:VCARD`;
-        await mconn.conn.sendMessage(nk.from, { contacts: { displayName: '𝐁𝐫𝐮𝐧𝐨 𝐒𝐨𝐛𝐫𝐢𝐧𝐨 👑', contacts: [{ vcard }] } }, { quoted: callmsg });
+        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝗠𝘃𝗿𝗰𝗼 👑;;;\nFN:𝗠𝘃𝗿𝗰𝗼 👑\nORG:𝗠𝘃𝗿𝗰𝐨 👑\nTITLE:\nitem1.TEL;waid=56983073328:+56 983 073 328\nitem1.X-ABLabel:𝗠𝘃𝗿𝗰𝗼 👑\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:𝗠𝘃𝗿𝗰𝗼 👑\nEND:VCARD`;
+        await mconn.conn.sendMessage(nk.from, { contacts: { displayName: '𝗠𝘃𝗿𝗰𝗼 👑', contacts: [{ vcard }] } }, { quoted: callmsg });
         await mconn.conn.updateBlockStatus(nk.from, 'block');
       }
     }
@@ -1177,7 +1178,7 @@ export async function callUpdate(callUpdate) {
 
 export async function deleteUpdate(message) {
   const datas = global
-  const id = message?.participant 
+  const id = message?.participant
   const idioma = datas.db.data.users[id]?.language || global.defaultLenguaje;
   const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
   const tradutor = _translate.handler.deleteUpdate

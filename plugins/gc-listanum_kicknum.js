@@ -1,9 +1,9 @@
-/*              Codigo Creado Por Bruno Sobrino
+/*              Codigo Creado Por Mvrco
       (https://github.com/BrunoSobrino/TheMystic-Bot-MD)
 */
 
 
-const handler = async (m, {conn, args, groupMetadata, participants, usedPrefix, command, isBotAdmin, isSuperAdmin}) => {
+const handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, command, isBotAdmin, isSuperAdmin }) => {
   const datas = global
   const idioma = datas.db.data.users[m.sender].language || global.defaultLenguaje
   const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
@@ -15,11 +15,11 @@ const handler = async (m, {conn, args, groupMetadata, participants, usedPrefix, 
   const ps = participants.map((u) => u.id).filter((v) => v !== conn.user.jid && v.startsWith(lol || lol));
   const bot = global.db.data.settings[conn.user.jid] || {};
   if (ps == '') return m.reply(`${tradutor.texto3} +${lol}*`);
-  const numeros = ps.map((v)=> '⭔ @' + v.replace(/@.+/, ''));
-  const delay = (time) => new Promise((res)=>setTimeout(res, time));
+  const numeros = ps.map((v) => '⭔ @' + v.replace(/@.+/, ''));
+  const delay = (time) => new Promise((res) => setTimeout(res, time));
   switch (command) {
     case 'listanum': case 'listnum':
-      conn.reply(m.chat, `${tradutor.texto4[0]} +${lol} ${tradutor.texto4[1]}\n\n` + numeros.join`\n`, m, {mentions: ps});
+      conn.reply(m.chat, `${tradutor.texto4[0]} +${lol} ${tradutor.texto4[1]}\n\n` + numeros.join`\n`, m, { mentions: ps });
       break;
     case 'kicknum':
       if (!bot.restrict) return m.reply(`${tradutor.texto5[0]} (#𝚎𝚗𝚊𝚋𝚕𝚎 𝚛𝚎𝚜𝚝𝚛𝚒𝚌𝚝) ${tradutor.texto5[1]}`);
@@ -32,7 +32,7 @@ const handler = async (m, {conn, args, groupMetadata, participants, usedPrefix, 
         if (user !== ownerGroup + '@s.whatsapp.net' && user !== global.conn.user.jid && user !== global.owner + '@s.whatsapp.net' && user.startsWith(lol || lol) && user !== isSuperAdmin && isBotAdmin && bot.restrict) {
           await delay(2000);
           const responseb = await conn.groupParticipantsUpdate(m.chat, [user], 'remove');
-          if (responseb[0].status === '404') m.reply(error, m.chat, {mentions: conn.parseMention(error)});
+          if (responseb[0].status === '404') m.reply(error, m.chat, { mentions: conn.parseMention(error) });
           await delay(10000);
         } else return m.reply(tradutor.texto9);
       }
