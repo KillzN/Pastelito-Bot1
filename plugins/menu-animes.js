@@ -26,7 +26,7 @@ const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, i
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
-║    ◉— *KILL - BOT* —◉
+║    ◉— *ANGIECHATBOT* —◉
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
 ║➤ ${tradutor.texto1[1]}, ${taguser}*
 ╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
